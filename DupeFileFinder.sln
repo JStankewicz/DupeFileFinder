@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DupeFileFinder", "DupeFileFinder\DupeFileFinder.csproj", "{88B08ED4-C7CF-4D9D-BD58-F2D31222ECCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88B08ED4-C7CF-4D9D-BD58-F2D31222ECCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B08ED4-C7CF-4D9D-BD58-F2D31222ECCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B08ED4-C7CF-4D9D-BD58-F2D31222ECCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B08ED4-C7CF-4D9D-BD58-F2D31222ECCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {262819D5-843F-4584-A39F-97959E480840}
+	EndGlobalSection
+EndGlobal

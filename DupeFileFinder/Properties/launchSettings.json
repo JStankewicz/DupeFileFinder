@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DupeFileFinder": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\jacks\\Desktop\""
+    }
+  }
+}
