@@ -20,7 +20,7 @@ namespace DupeFileFinder
         public static void FindDupes(string dirPath, int minSize)
         {
             // Get the files from the directory specified and its subdirectories.
-            var files = Directory.GetFiles(dirPath, "*", SearchOption.AllDirectories);
+            var files = Directory.EnumerateFiles(@dirPath, "*", new EnumerationOptions() { RecurseSubdirectories = true });
 
             // For each file, find its length and map it to the file name.
             var fileLengths = from f in files select new { name = f, len = new FileInfo(f).Length };
