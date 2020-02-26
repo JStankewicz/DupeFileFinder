@@ -19,6 +19,12 @@ namespace DupeFileFinder
         /// <param name="minSize">Minimum file size in megabytes.</param>
         public static void FindDupes(string dirPath, int minSize)
         {
+            if(minSize < 0)
+            {
+                Console.WriteLine("Invalid min size {0}. Setting minimum size to check to 0.", minSize);
+                minSize = Math.Max(minSize, 0);
+            }
+
             // Get the files from the directory specified and its subdirectories.
             var files = Directory.EnumerateFiles(@dirPath, "*", new EnumerationOptions() { RecurseSubdirectories = true });
 

@@ -21,7 +21,7 @@ namespace DupeFileFinder
 
             try
             {
-                DupeFinderParallel.FindDupes(dirPath, Math.Max(minSize, 0));
+                DupeFinderParallel.FindDupes(dirPath, minSize);
             }
             catch (Exception)
             {
