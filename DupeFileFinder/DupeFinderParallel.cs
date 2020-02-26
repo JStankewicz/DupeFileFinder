@@ -5,6 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
+// TODO: support multiple directory paths.
+// TODO: support filtering by excluding file types.
+
 namespace DupeFileFinder
 {
     class DupeFinderParallel
