@@ -16,7 +16,7 @@ namespace DupeFileFinder
 
             try
             {
-                DupeFinderSingle.FindDupes(dirPath);
+                DupeFinderParallel.FindDupes(dirPath);
             }
             catch (Exception)
             {
