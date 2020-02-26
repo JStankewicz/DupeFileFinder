@@ -16,8 +16,8 @@ namespace DupeFileFinder
         /// Find duplicate files above an optional minimum size in a given directory.
         /// </summary>
         /// <param name="dirPath">Directory to check for duplicates.</param>
-        /// <param name="minSize">Minimum file size in megabytes. Optional, default 1 MB.</param>
-        public static void FindDupes(string dirPath, int minSize = 1)
+        /// <param name="minSize">Minimum file size in megabytes.</param>
+        public static void FindDupes(string dirPath, int minSize)
         {
             // Get the files from the directory specified and its subdirectories.
             var files = Directory.GetFiles(dirPath, "*", SearchOption.AllDirectories);

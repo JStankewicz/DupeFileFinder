@@ -7,16 +7,21 @@ namespace DupeFileFinder
 
         static int Main(string[] args)
         {
-            if (args.Length != 1)
+            if (args.Length < 1)
             {
-                Console.WriteLine("Expects 1 argument: dirpath.");
+                Console.WriteLine("Expects at least 1 argument: dirpath.");
             }
 
             string dirPath = args[0];
+            int minSize = -1;
+            if (args.Length >= 2)
+            {
+                minSize = int.Parse(args[1]);
+            }
 
             try
             {
-                DupeFinderParallel.FindDupes(dirPath);
+                DupeFinderParallel.FindDupes(dirPath, Math.Max(minSize, 0));
             }
             catch (Exception)
             {
